@@ -1,0 +1,78 @@
+
+<div class="container emp-profile">
+    <form [formGroup]="perfilForm" id="perfilForm">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="profile-img">
+                    <img src="{{this.img}}" alt=""/>
+                    <div class="file btn btn-lg btn-primary">
+                        <input type="file" name="file" formControlName="foto"/>
+                    </div>
+                </div>
+
+        <div class="row">
+                <div class="profile-work">
+                    <p>Redes sociales</p>
+                    <i class="fab fa-facebook-f"><input type="text" placeholder="{{this.face}}" class="form-control" formControlName="facebook" readonly></i> <br>
+                    <i class="fab fa-instagram-square"><input type="text" placeholder="{{this.inst}}"class="form-control" formControlName="instagram" readonly></i><br>
+                    <i class="fab fa-twitter"><input type="text" placeholder="{{this.twit}}"  class="form-control" formControlName="twitter" readonly></i>
+            </div>
+      
+            </div>
+            </div>
+            <div class="col-md-6">
+                <div class="profile-head">
+                    <h5>Nombre de usuario:</h5>
+                    <input type="text" placeholder="{{this.usrname}}"  class="form-control" formControlName="nombre_usuario" readonly>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" aria-selected="true">Más información</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-4"> 
+                        <h5>Nombre:</h5> 
+                        <input type="text" placeholder="{{this.name}}"  class="form-control" formControlName="nombre" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <h5>Apellido paterno:</h5> 
+                            <input type="text" placeholder="{{this.ape_pat}}"  class="form-control" formControlName="ape_pat" readonly>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <h5>Apellido materno:</h5> 
+                        <input type="text" placeholder="{{this.ape_mat}}"  class="form-control" formControlName="ape_mat" readonly>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-8">
+                        <h5>Correo:</h5> 
+                            <input type="text" placeholder="{{this.email}}"  class="form-control" formControlName="correo" readonly>
+                    </div>
+                </div>  
+                <div class="form-row">
+                    <div class="form-group col-md-6">  
+                        <h5>Fecha de nacimiento:</h5>
+                            <input type="text" placeholder="{{this.fecha_nac}}"  class="form-control" formControlName="fecha_nac" readonly>
+                    </div>
+                    <div class="form-group col-md-6">  
+                        <h5>Teléfono:</h5>
+                            <input type="text" placeholder="{{this.tel}}"  class="form-control" formControlName="telefono" readonly>
+                    </div>        
+                </div>    
+                <div class="form-row">
+                    <div class="form-group col-md-8"> 
+                        <h5>Profesión:</h5>
+                          <input type="text" placeholder="{{this.prof}}"  class="form-control" formControlName="profesion" readonly>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12"> 
+                        <h5>Descripción:</h5>
+                        <textarea class="form-control" id="descripcion" rows="3" placeholder="{{this.desc}}" formControlName="descripcion" readonly></textarea>
+                    </div>
+                </div>
+            </div>
+        </div>
+            </form>           
+        </div>
